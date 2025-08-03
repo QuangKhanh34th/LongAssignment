@@ -1,25 +1,10 @@
 Title:
-Courses Program Management
+Courses Program Management (Java Terminal Application)
 
-Background:
-FU's short-term informatics training center is training informatics courses. Short-term topics such as
-Photoshop, Java, Web, ...The management of courses, students, transcripts, and revenue is done through Excel.
-Currently, the center is facing difficulties when the number of learners is increasing day by day. The data is getting
-bigger and bigger, so it is very difficult to manage Excel without security. The center wishes to build software to
-solve the above difficulties.
-
-&nbsp;
+Java Version: Java 8
  
-Requirements for professional functions:
+**Features:**
 
-− Manage Topics
-
-− Manage courses created from topic
-
-&nbsp;
- 
-Program Specifications:
-Build a courses management program. With the following basic functions:
 1. Manage the Topics
    
   1.1. Add Topics to catalog
@@ -74,20 +59,18 @@ Build a courses management program. With the following basic functions:
    
 &nbsp;
  
-Features:
+
 
 This system contains the following functions:
 
-**Function 0 – 50 LOC: Build your data structure**
+**Data structure:**
 
-➢ Topic information includes Topic code or ID, name, type (long/short term), title, duration, etc….
+➢ Topic information includes TopicID, name, type (long/short term), title, duration, etc….
 
-Topic ID is unique.
+➢ Course information includes CourseID, name, type (online/offline), title, begin date, end
+date, tuition fee and topic, etc…
 
-➢ Course information includes Course code or ID, name, type (online/offline), title, begin date, end
-date, tuition fee and topic, etc…. Course ID is unique.
-
-➢ Learner information includes code or ID, name, date of birth, score, course, etc…
+➢ Learner information includes codeID, name, date of birth, score, course, etc…
 
 ➢ Applying OOP principles, design with inheritance, polymorphism, interface or abstract class.
 
@@ -95,7 +78,7 @@ date, tuition fee and topic, etc…. Course ID is unique.
 
 &nbsp;
  
-**Function 1 – 100 LOC: Manage the Topics**
+**Function 1: Manage the Topics**
 
 1.1.Add Topics to catalog
 
@@ -144,7 +127,7 @@ start inputting new information about topic and update it.
 
 &nbsp;
  
-**Function 2 -- 150 LOC: Manage the Course**
+**Function 2: Manage the Course**
 
 2.1.Add Course
 
@@ -195,7 +178,7 @@ can start inputting new information about course and update.
 
 &nbsp;
  
-**Function 3 -- 100 LOC: Manage the Learner**
+**Function 3: Manage the Learner**
 
  3.1.Add Learner to Course
 
@@ -231,7 +214,7 @@ can start inputting scores of learner and update.
 
 &nbsp;
  
-**Function 4 -- 50 LOC: Search information**
+**Function 4: Search information**
 
 4.1.Search Topic
 
@@ -250,13 +233,9 @@ information
 
 &nbsp;
  
-**Function 5 -- 50 LOC: Save Topics, Courses and Learner to file.**
+**Function 5: Save Topics, Courses and Learner to file.**
 
 - Store the data of Topics, Courses and Learner to file.
 
 - Reload data when the program starts.
 
-❖ The above specifications are only basic information; you must perform a requirements analysis step, handle runtime exceptions and
-build the application according to real requirements.
-
-❖ The lecturer will explain the requirement only once on the first slot of the assignment.
